@@ -3,6 +3,6 @@
     "concurrently": "^9.2.1"
   },
   "scripts": {
-  "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\""
-}
+    "dev": "node api.js && concurrently \"cd server && npm run dev\" \"cd client && npm run dev\""
+  }
 }
